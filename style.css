@@ -520,6 +520,82 @@ h3 {
   color: var(--muted);
 }
 
+.request-section {
+  background: var(--soft);
+}
+
+.request-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.request-grid > div p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.request-form {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.request-form label {
+  display: grid;
+  gap: 6px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.request-form .address-field[hidden] {
+  display: none;
+}
+
+.request-form input {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--text);
+  padding: 0 12px;
+  font: inherit;
+}
+
+.request-form input:focus {
+  outline: 2px solid rgba(82, 107, 69, 0.18);
+  border-color: var(--olive);
+}
+
+.delivery-toggle {
+  min-height: 42px;
+  border: 1px solid var(--olive);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--olive);
+  padding: 0 14px;
+  font: inherit;
+  font-weight: 800;
+  text-align: center;
+}
+
+.delivery-toggle.active {
+  background: var(--olive);
+  color: #fff;
+}
+
+.form-status {
+  min-height: 20px;
+  margin-bottom: 0;
+  color: var(--olive);
+  font-size: 14px;
+  font-weight: 800;
+}
+
 .contact-grid {
   display: grid;
   gap: 18px;
@@ -644,6 +720,7 @@ h3 {
   }
 
   .recommend-grid,
+  .request-grid,
   .contact-grid {
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1fr);
     align-items: center;
@@ -686,7 +763,8 @@ h3 {
   }
 
   .btn.secondary:hover,
-  .chip:hover {
+  .chip:hover,
+  .delivery-toggle:hover {
     border-color: var(--olive);
   }
 

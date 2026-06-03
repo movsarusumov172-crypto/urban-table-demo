@@ -17,6 +17,7 @@
           <a href="#breakfast">Завтраки</a>
           <a href="#lunch">Бизнес-ланч</a>
           <a href="#booking">Бронь</a>
+          <a href="#request">Заявка</a>
           <a href="#contacts">Контакты</a>
         </nav>
       </div>
@@ -264,6 +265,37 @@
         </div>
       </section>
 
+      <section class="section request-section" id="request">
+        <div class="container request-grid">
+          <div>
+            <p class="eyebrow">Заявка</p>
+            <h2>Оставьте контакты для брони или заказа</h2>
+            <p>Мы перезвоним, подтвердим стол или заказ навынос. Если нужна доставка, добавьте адрес.</p>
+          </div>
+          <form class="request-form">
+            <label>
+              Имя
+              <input type="text" name="firstName" placeholder="Мария" autocomplete="given-name" required>
+            </label>
+            <label>
+              Фамилия
+              <input type="text" name="lastName" placeholder="Смирнова" autocomplete="family-name" required>
+            </label>
+            <label>
+              Номер телефона
+              <input type="tel" name="phone" placeholder="+7 999 222-44-55" autocomplete="tel" required>
+            </label>
+            <button class="delivery-toggle" type="button" aria-expanded="false">Доставка</button>
+            <label class="address-field" hidden>
+              Адрес доставки
+              <input type="text" name="address" placeholder="Город, улица, дом, квартира" autocomplete="street-address">
+            </label>
+            <button class="btn primary" type="submit">Подать заявку</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
       <section class="section contacts" id="contacts">
         <div class="container contact-grid" id="booking">
           <div>
@@ -286,7 +318,7 @@
     <div class="mobile-actions" aria-label="Быстрые действия">
       <a href="tel:+79992224455">Позвонить</a>
       <a href="https://wa.me/79992224455" target="_blank" rel="noreferrer">WhatsApp</a>
-      <a href="#booking">Бронь</a>
+      <a href="#request">Заявка</a>
     </div>
 
     <script src="script.js"></script>
