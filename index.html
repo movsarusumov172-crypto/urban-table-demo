@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Urban Table — городское кафе</title>
+    <meta name="description" content="Urban Table: завтраки, бизнес-ланч, основное меню, десерты и бронь столов.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top">Urban Table</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Меню</button>
+        <nav class="nav" id="main-nav" aria-label="Основная навигация">
+          <a href="#menu">Меню</a>
+          <a href="#breakfast">Завтраки</a>
+          <a href="#lunch">Бизнес-ланч</a>
+          <a href="#booking">Бронь</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Тарелки с едой на столе">
+          </div>
+          <div class="hero-copy">
+            <p class="eyebrow">Кафе в центре города</p>
+            <h1>Завтраки, ланчи и ужины без лишней суеты</h1>
+            <p class="lead">Готовим понятную еду, держим несколько столов под бронь и собираем заказы навынос.</p>
+            <div class="hero-meta">
+              <span>Завтраки от 390 ₽</span>
+              <span>Ланч 590 ₽</span>
+            </div>
+            <div class="hero-actions">
+              <a class="btn primary" href="#menu">Посмотреть меню</a>
+              <a class="btn secondary" href="#booking">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Меню</p>
+              <h2>Популярные блюда</h2>
+            </div>
+            <a class="text-link" href="#contacts">Уточнить стол</a>
+          </div>
+
+          <div class="category-row" aria-label="Категории меню">
+            <button class="chip active" type="button" data-filter="all">Все</button>
+            <button class="chip" type="button" data-filter="breakfast">Завтраки</button>
+            <button class="chip" type="button" data-filter="main">Основное</button>
+            <button class="chip" type="button" data-filter="drinks">Напитки</button>
+            <button class="chip" type="button" data-filter="desserts">Десерты</button>
+          </div>
+
+          <div class="menu-grid">
+            <article class="dish-card" data-category="breakfast" id="breakfast">
+              <div>
+                <p class="dish-tag">до 12:00</p>
+                <h3>Сырники со сметаной</h3>
+                <p>Творожные сырники, ягодный соус, сметана.</p>
+              </div>
+              <strong>430 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="breakfast">
+              <div>
+                <p class="dish-tag">завтрак</p>
+                <h3>Омлет с зеленью</h3>
+                <p>Три яйца, шпинат, томаты, мягкий сыр.</p>
+              </div>
+              <strong>390 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="breakfast">
+              <div>
+                <p class="dish-tag">завтрак</p>
+                <h3>Тост с лососем</h3>
+                <p>Зерновой хлеб, крем-сыр, огурец, яйцо.</p>
+              </div>
+              <strong>620 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="main">
+              <div>
+                <p class="dish-tag">основное</p>
+                <h3>Паста с томатами и страчателлой</h3>
+                <p>Свежие томаты, базилик, оливковое масло.</p>
+              </div>
+              <strong>690 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="main">
+              <div>
+                <p class="dish-tag">основное</p>
+                <h3>Курица с картофелем</h3>
+                <p>Запеченная курица, молодой картофель, соус с травами.</p>
+              </div>
+              <strong>740 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="main" id="lunch">
+              <div>
+                <p class="dish-tag">ланч 12:00-16:00</p>
+                <h3>Бизнес-ланч</h3>
+                <p>Суп дня, горячее на выбор и напиток.</p>
+              </div>
+              <strong>590 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="drinks">
+              <div>
+                <p class="dish-tag">напиток</p>
+                <h3>Фильтр-кофе</h3>
+                <p>Завариваем свежую партию каждые два часа.</p>
+              </div>
+              <strong>210 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="drinks">
+              <div>
+                <p class="dish-tag">напиток</p>
+                <h3>Домашний лимонад</h3>
+                <p>Цитрус, мята, газированная вода.</p>
+              </div>
+              <strong>290 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="desserts">
+              <div>
+                <p class="dish-tag">десерт</p>
+                <h3>Медовик</h3>
+                <p>Тонкие коржи, сметанный крем, грецкий орех.</p>
+              </div>
+              <strong>360 ₽</strong>
+            </article>
+
+            <article class="dish-card" data-category="desserts">
+              <div>
+                <p class="dish-tag">десерт</p>
+                <h3>Шоколадный тарт</h3>
+                <p>Плотный шоколад, морская соль, сливки.</p>
+              </div>
+              <strong>410 ₽</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section recommend">
+        <div class="container recommend-grid">
+          <div class="recommend-photo">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=900&q=80" alt="Повар готовит блюдо на кухне">
+          </div>
+          <div>
+            <p class="eyebrow">Сегодня рекомендуем</p>
+            <h2>Ланч с супом дня и горячим</h2>
+            <p>Каждый будний день с 12:00 до 16:00. Хороший вариант, если нужно поесть быстро и нормально.</p>
+            <a class="btn primary" href="#booking">Забронировать стол</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section soft">
+        <div class="container service-grid">
+          <article>
+            <h3>Доставка</h3>
+            <p>По району доставляем через партнеров. Уточните время перед заказом.</p>
+          </article>
+          <article>
+            <h3>Самовывоз</h3>
+            <p>Соберем заказ к нужному времени. Удобно для ланчей и кофе с собой.</p>
+          </article>
+          <article>
+            <h3>Бронь</h3>
+            <p>Для компаний от 4 человек лучше написать заранее, особенно вечером.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section compact">
+        <div class="container">
+          <p class="eyebrow">Отзывы</p>
+          <h2>Гости заходят на завтрак и ланч</h2>
+          <div class="review-grid">
+            <article>
+              <p>“Спокойное место, завтраки без ожидания. Сырники не переслащенные, кофе нормальный.”</p>
+              <span>Ольга</span>
+            </article>
+            <article>
+              <p>“Беру ланч рядом с офисом. Меню небольшое, зато понятно, что будет на тарелке.”</p>
+              <span>Михаил</span>
+            </article>
+            <article>
+              <p>“Бронировали стол на вечер. Посадили вовремя, десерты понравились всем.”</p>
+              <span>Алина</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section">
+        <div class="container">
+          <p class="eyebrow">FAQ</p>
+          <h2>Частые вопросы</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <button class="faq-question" type="button">Нужно ли бронировать стол?</button>
+              <div class="faq-answer">
+                <p>В будни днем обычно можно прийти без брони. Вечером и на выходных лучше написать заранее.</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">Есть блюда навынос?</button>
+              <div class="faq-answer">
+                <p>Да, почти все блюда из меню можно взять с собой. Ланч собираем в отдельную упаковку.</p>
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">Можно прийти с детьми?</button>
+              <div class="faq-answer">
+                <p>Да, есть детский стул и простые блюда, которые обычно подходят детям.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div class="container contact-grid" id="booking">
+          <div>
+            <p class="eyebrow">Контакты</p>
+            <h2>Забронируйте стол или уточните меню</h2>
+            <p>Казань, ул. Баумана, 42. Пн-пт 8:00-22:00, сб-вс 9:00-23:00.</p>
+            <div class="contact-actions">
+              <a class="btn primary" href="tel:+79992224455">Позвонить</a>
+              <a class="btn secondary" href="https://wa.me/79992224455" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+          <div class="map-card" aria-label="Карта-заглушка">
+            <span>Urban Table</span>
+            <p>ул. Баумана, 42</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="mobile-actions" aria-label="Быстрые действия">
+      <a href="tel:+79992224455">Позвонить</a>
+      <a href="https://wa.me/79992224455" target="_blank" rel="noreferrer">WhatsApp</a>
+      <a href="#booking">Бронь</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
